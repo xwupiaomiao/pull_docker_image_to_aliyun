@@ -1,7 +1,7 @@
 # 教程
 https://github.com/tech-shrimp/docker_image_pusher
 
-# 从阿里云docker pull镜像报错
+# 1、从阿里云docker pull镜像报错
 [root@localhost ~]# docker pull crpi-g05smmlotxjkdb8e.cn-hangzhou.personal.cr.aliyuncs.com/xxxxxx/alpine
 Using default tag: latest
 Error: remote trust data does not exist for crpi-g05smmlotxjkdb8e.cn-hangzhou.personal.cr.aliyuncs.com/xxxxxx/alpine: crpi-g05smmlotxjkdb8e.cn-hangzhou.personal.cr.aliyuncs.com does not have trust data for crpi-g05smmlotxjkdb8e.cn-hangzhou.personal.cr.aliyuncs.com/xxxxxx/alpine
@@ -11,7 +11,7 @@ Error: remote trust data does not exist for crpi-g05smmlotxjkdb8e.cn-hangzhou.pe
 # 永久设置
 [root@localhost ~]# echo "export DOCKER_CONTENT_TRUST=false" >>.bashrc
 [root@localhost ~]# source ~/.bashrc
-# 允许使用未签名的镜像源
+# 2、允许使用未签名的镜像源
 [root@localhost ~]# echo '{"insecure-registries": ["your-registry-address:port"]}' >/etc/docker/daemon.json
 # 启动Docker守护进程时添加--insecure-registry
 [root@localhost ~]# vim /usr/lib/systemd/system/docker.service
