@@ -14,5 +14,5 @@ Error: remote trust data does not exist for crpi-g05smmlotxjkdb8e.cn-hangzhou.pe
 # 2、允许使用未签名的镜像源
 [root@localhost ~]# echo '{"insecure-registries": ["your-registry-address:port"]}' >/etc/docker/daemon.json
 # 启动Docker守护进程时添加--insecure-registry
-[root@localhost ~]# vim /usr/lib/systemd/system/docker.service
+[root@localhost ~]# vim /usr/lib/systemd/system/docker.service<br />
 ExecStart=/usr/bin/dockerd --insecure-registry your-registry-address:port
