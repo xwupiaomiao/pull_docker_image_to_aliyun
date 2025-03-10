@@ -9,7 +9,7 @@ Error: remote trust data does not exist for crpi-g05smmlotxjkdb8e.cn-hangzhou.pe
 # 临时允许未签名的镜像
 [root@localhost ~]# export DOCKER_CONTENT_TRUST=false
 # 永久设置
-[root@localhost ~]# echo "export DOCKER_CONTENT_TRUST=false" >>.bashrc
+[root@localhost ~]# echo "export DOCKER_CONTENT_TRUST=false" >>.bashrc<br />
 [root@localhost ~]# source ~/.bashrc
 # 2、允许使用未签名的镜像源
 [root@localhost ~]# echo '{"insecure-registries": ["your-registry-address:port"]}' >/etc/docker/daemon.json
