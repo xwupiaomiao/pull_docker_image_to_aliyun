@@ -1,6 +1,9 @@
 # 教程
 https://github.com/tech-shrimp/docker_image_pusher
 
+# 登录阿里云容器镜像服务
+https://cr.console.aliyun.com/
+
 # 1、从阿里云docker pull镜像报错
 [root@localhost ~]# docker pull crpi-g05smmlotxjkdb8e.cn-hangzhou.personal.cr.aliyuncs.com/xxxxxx/alpine
 Using default tag: latest
