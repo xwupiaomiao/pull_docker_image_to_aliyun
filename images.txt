@@ -2,5 +2,6 @@
 # https://hub.docker.com/   # 需要翻墙
 #支持指定架构
 #--platform=linux/amd64 [镜像名]
-busybox
-docker.io/networkstatic/iperf3:latest
+#busybox
+#docker.io/networkstatic/iperf3:latest
+grafana/grafana:11.2.10
