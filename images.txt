@@ -4,4 +4,5 @@
 #--platform=linux/amd64 [镜像名]
 #busybox
 #docker.io/networkstatic/iperf3:latest
-grafana/grafana:11.2.10
+#grafana/grafana:11.2.10
+multiarch/qemu-user-static
