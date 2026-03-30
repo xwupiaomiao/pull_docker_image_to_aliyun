@@ -5,4 +5,5 @@
 #busybox
 #docker.io/networkstatic/iperf3:latest
 #grafana/grafana:11.2.10
-multiarch/qemu-user-static
+# multiarch/qemu-user-static
+moby/buildkit:buildx-stable-1
